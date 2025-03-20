@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-app">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <h3>Chats</h3>
+            <ul>
+                
+            </ul>
+        </div>
+
+        <!-- Main Chatbox Area -->
+        <div class="chat-container">
+            <!-- Hamburger Button -->
+            <button id="menuBtn" class="menu-btn">☰</button>
+
+            <div id="chatbox">
+                <div id="messages"></div>
+            </div>
+
+            
+                <textarea id="userInput" placeholder="Type a message..."></textarea>
+                <button id="sendBtn">Send</button>
+            
+
+            <div class="plus-button-container">
+               <button id="plusBtn" class="plus-button">+</button>
+               
+               <!-- Options (Hidden Initially) -->
+               <div id="plusOptions" class="plus-options">
+                  <button id="copyOption">📋 Copy</button>
+                   <button id="voiceOption">🎤 Voice</button>
+                   <button id="imageOption">📷 Image</button>
+                   <button id="fileOption">📁 File</button>
+                   <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                   <input type="file" id="fileInput" style="display: none;">
+               </div>
+           </div>
+        </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
